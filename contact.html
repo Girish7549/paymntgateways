@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PaymntGateway</title>
+    <link rel="stylesheet" href="pages_styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" style="text-decoration: none">
+                <div class="logo">PaymntGateway</div>
+              </a>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="nav-links">
+                <div class="dropdown"><a href="/">Our Services</a></div>
+                <div class="dropdown"><a href="/">Contact Us</a></div>
+                <div class="dropdown"><a href="/">About Us</a></div>
+              </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Contact Introduction -->
+        <div class="section" style="z-index: 99;">
+            <h1>Contact Us</h1>
+            <p>We’re here to assist you with all your payment gateway needs! Whether you have questions about
+                integration, pricing, or support, our dedicated team at PaymntGateway is just a message away. Reach out
+                to us using the form below or through our contact details.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="section">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone No" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp No" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="section contact-details">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@paymntgateway.com"
+                    style="color: #ff80b5;">support@paymntgateway.com</a></p>
+            <p><strong>Phone:</strong> +91 8178432760</p>
+            <p><strong>Address:</strong> Adzdrio India Services, D14, Noida Sector 6, Uttar Pradesh, India, 201309</p>
+            <p><strong>Business Hours:</strong> Monday to Saturday, 10:00 AM - 6:30 PM IST</p>
+        </div>
+
+        <!-- Map Placeholder -->
+        <!-- <div class="section map-section">
+            <h2>Our Location</h2>
+            <p>Visit us at our Mumbai office or find us on the map below:</p>
+            <iframe src="https://www.google.com/maps/@28.59008,77.365248,12z?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+        </div> -->
+
+        <!-- FAQ Section -->
+        <div class="section faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How long does it take to integrate the payment gateway?</h3>
+                <p>Our onboarding process is lightning-fast! You can integrate the PaymntGateway payment gateway in just
+                    7-10 days with our hassle-free setup.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you support?</h3>
+                <p>We support a wide range of payment methods, including UPI, credit/debit cards, net banking, wallets,
+                    crypto, and BNPL (Buy Now Pay Later).</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I resolve a transaction dispute?</h3>
+                <p>We offer 100% customer issue resolution. Simply email us at <a
+                        href="mailto:support@paymntgateway.com" style="color: #ff80b5;">support@paymntgateway.com</a>,
+                    and our team will assist you promptly.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About PaymntGateway</h3>
+                <p style="margin-bottom: 10px;">Your trusted payment gateway solution for modern businesses.</p>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <p style="display: flex; align-items: center; font-size: small;">
+                        <svg class="icon-footer" viewBox="0 0 384 512" style="margin-bottom: 0px;">
+                            <path
+                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                            </path>
+                        </svg>
+                        Payment Gateway
+                    </p>
+                    <p style="display: flex; align-items: center; font-size: small;">
+                        <svg class="icon-footer" viewBox="0 0 512 512" style="margin-bottom: 0px;">
+                            <path
+                                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                            </path>
+                        </svg>
+                        contact@paymntgateway.com
+                    </p>
+                    <p style="display: flex; align-items: center; font-size: small;">
+                        <svg class="icon-footer" viewBox="0 0 512 512" style="margin-bottom: 0px;">
+                            <path
+                                d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                            </path>
+                        </svg>
+                        +91 8178432760
+                    </p>
+                </div>
+                <!-- <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div> -->
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="return.html">Return Policy</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer-section">
+            <h3>Newsletter</h3>
+            <form class="footer-newsletter">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p>Subscribe for updates and offers</p>
+          </div> -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PaymntGateway. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

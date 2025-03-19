@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PaymntGateway-Payment Gateway</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="/" style="text-decoration: none">
+        <div class="logo">PaymntGateway</div>
+      </a>
+      
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <div class="nav-links">
+        <div class="dropdown"><a href="#services">Our Services</a></div>
+        <div class="dropdown"><a href="#contact-us">Contact Us</a></div>
+        <div class="dropdown"><a href="#about-us">About Us</a></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main style="margin-top: -4rem;">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          <!-- Seamless Payment Solutions for Every Business -->
+          Seamless<br />
+          Payment Solutions<br />
+          <!-- <br> -->
+          <span class="highlight">for Every Business</span>
+        </h1>
+        <p>
+          Accept payments and send funds easily with PaymntGateway. Choose an easy
+          way to manage all payment processes so you can focus on growing your
+          business
+        </p>
+        <div class="cta-buttons">
+          <button class="get-started-btn" onclick="openWhatsApp()">Get started</button>
+          <button class="watch-video-btn">
+            <a style="color: white" href="/about.html">
+              <span class="play-icon">▶</span>
+              About Us
+            </a>
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <h2>50K<span class="plus">+</span></h2>
+            <p>Business using<br />PaymntGateway</p>
+          </div>
+          <div class="stat-item">
+            <h2>20M<span class="plus">+</span></h2>
+            <p>Transactions processed<br />per month</p>
+          </div>
+          <div class="stat-item">
+            <h2>80<span class="percent">%+</span></h2>
+            <p>Online users transact via PaymntGateway</p>
+          </div>
+        </div>
+
+        <div class="partner-logos">
+          <img src="./img/hello-Photoroom.png" alt="Payoneer" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+            alt="Amazon" />
+          <img src="./img/PayPal-logo-white-png-horizontal-300x80.png" alt="Alipay" />
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="blob"></div>
+        <img src="./img/Landing Page 2_enhanced (1)_enhanced.png" style="object-fit: contain; width: 70%;" />
+        <!-- Blurry Blob -->
+        <!-- <div class="card-container">
+            <div class="credit-card">
+              <div class="card-chip" style="object-fit: contain">
+                <img src="./img/chip.png" style="height: 40px; width: 50px" />
+              </div>
+              <div class="card-number">5294 2436 4780 2468</div>
+              <div class="card-logo"></div>
+            </div>
+          </div> -->
+      </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-methods">
+      <div class="carousel-logo">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <img src="./img/hello-Photoroom.png" alt="Netflix" style="width: 150px; height: 100px" />
+            <img src="./img/ebf2f0588e962512eab4e9bc355d88a5.png" alt="Hulu" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (1).png" alt="Videoland" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (4).png" alt="NLZ" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (5).png" alt="Voot" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (6).png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (7).png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/PAYTM.NS_BIG.D.png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com.png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/PayPal-logo-white-png-horizontal-300x80.png" alt="Viaplay"
+              style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (3).png" alt="HBO" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (4).png" alt="Discovery" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg.png" alt="Apple TV" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (1).png" alt="Begin" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (2).png" alt="Disney" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (3).png" alt="Prime Video" style="width: 150px; height: 100px" />
+
+            <!-- Duplicate images for infinite loop effect -->
+            <img src="./img/hello-Photoroom.png" alt="Netflix" style="width: 150px; height: 100px" />
+            <img src="./img/ebf2f0588e962512eab4e9bc355d88a5.png" alt="Hulu" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (1).png" alt="Videoland" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (4).png" alt="NLZ" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (5).png" alt="Voot" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (6).png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (7).png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (8).png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com.png" alt="MX Player" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (2).png" alt="Viaplay" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (3).png" alt="HBO" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg (4).png" alt="Discovery" style="width: 150px; height: 100px" />
+            <img src="./img/pngegg.png" alt="Apple TV" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (1).png" alt="Begin" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (2).png" alt="Disney" style="width: 150px; height: 100px" />
+            <img src="./img/pngwing.com (3).png" alt="Prime Video" style="width: 150px; height: 100px" />
+          </div>
+        </div>
+      </div>
+
+      <section class="services" id="contact-us">
+        <div class="section-header">
+          <h2>Connect with us</h2>
+          <p>Let us handle your payment needs while you focus on growing your business. Contact us now!</p>
+        </div>
+        <div class="container" style="display: flex; justify-content: space-around; align-items: center;">
+          <!-- Form on the left -->
+
+          <div class="contact-container">
+            <h3>Contact Us</h3>
+            <form class="contact-form" id="contact-form" style="color: white; margin-top: 15px;">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone No" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp No" required>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+
+          <!-- Contact Info on the right -->
+          <div class="info-container">
+            <h2 class="info-title">More Information</h2>
+            <!-- First Row: USA Address and Working Hours -->
+            <div class="info-row">
+              <div class="info-item" style="width: 50%;">
+                <svg class="icon" viewBox="0 0 384 512" style="margin-bottom: 10px;">
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                  </path>
+                </svg>
+                <div class="info-text">
+                  <div>
+                    <strong>India Address</strong>
+                  </div>
+                  <div>Payment Gateway</div>
+                </div>
+              </div>
+              <div class="info-item" style="width: 50%;">
+                <svg class="icon" viewBox="0 0 512 512" style="margin-bottom: 10px;">
+                  <path
+                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                  </path>
+                </svg>
+                <div class="info-text">
+                  <strong>Working Hours</strong>
+                  <div>
+                    Monday to Saturday
+                    <div>10am - 6:30pm</div>
+                  </div>
+                  <!-- <div>
+                      Weekend: 10am - 8pm
+                    </div> -->
+
+                </div>
+              </div>
+            </div>
+            <!-- Second Row: Email Address and Phone Numbers -->
+            <div class="info-row" style="margin-top: 10px;">
+              <div class="info-item" style="width: 50%;">
+                <svg class="icon" viewBox="0 0 512 512" style="margin-bottom: 10px;">
+                  <path
+                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                  </path>
+                </svg>
+                <div class="info-text">
+                  <strong>Email Address</strong>
+                  <div>contact@paymntgateway.com</div>
+                </div>
+              </div>
+              <div class="info-item" style="width: 50%;">
+                <svg class="icon" viewBox="0 0 512 512" style="margin-bottom: 10px;">
+                  <path
+                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                  </path>
+                </svg>
+                <div class="info-text">
+                  <div><strong>Phone Numbers</strong></div>
+                  <div>+91 8178432760</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-header">
+        <h2>All Payment Methods</h2>
+        <p>Support for all major payment methods worldwide</p>
+      </div>
+      <div class="payment-categories">
+        <div class="category domestic">
+          <h3>Domestic Payments</h3>
+          <div class="payment-grid">
+            <div class="payment-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png"
+                alt="Visa" />
+            </div>
+            <div class="payment-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
+                alt="Mastercard" />
+            </div>
+            <div class="payment-item payment-hide">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Razorpay_logo.png/800px-Razorpay_logo.png?20201121143022"
+                alt="PayPal" />
+            </div>
+
+          </div>
+        </div>
+        <div class="category international">
+          <h3>International Payments</h3>
+          <div class="payment-grid">
+            <div class="payment-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Payoneer-logo.png?20140327081713"
+                alt="Alipay" />
+            </div>
+            <div class="payment-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/640px-PayPal.svg.png"
+                alt="Payoneer" />
+            </div>
+            <div class="payment-item payment-hide">
+              <img src="./img/Zelle_logo.svg-removebg-preview.png" alt="Payoneer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive payment solutions for your business</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-credit-card"></i>
+          <h3>Easy Onboarding (7-10 Days)</h3>
+          <p>
+            Get your payment gateway up and running within a week! We handle
+            everything from registration to integration.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-exchange-alt"></i>
+          <h3>Company Registration (Domestic & International)</h3>
+          <p>
+            Need to register your business? We assist in both domestic &
+            international company setups, ensuring compliance with all
+            regulations.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>All Payment Methods Supported</h3>
+          <p>
+            UPI (Google Pay, PhonePe, Paytm, etc.) Credit & Debit Cards (Visa,
+            MasterCard, RuPay, Amex, etc.) Net Banking Wallets & BNPL (Buy Now
+            Pay Later) Crypto & International Payments
+          </p>
+        </div>
+        <!-- <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Affordable Consultancy Fee</h3>
+            <p>Our expert consultancy is available for just ₹6,999 (Adjustable in final costs).</p>
+          </div> -->
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>100% Customer Problem Resolution</h3>
+          <p>
+            We provide full support for customer issues, including complex
+            cases like fantasy gaming platforms.
+          </p>
+        </div>
+        <!-- <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Dedicated Support Team</h3>
+            <p>A professional team is available 24/7 to handle queries and disputes, ensuring seamless transactions for your customers.</p>
+          </div> -->
+      </div>
+    </section>
+
+    <!-- solution-section Sections -->
+
+    <section class="container-solution-section">
+      <div class="solution-section">
+        <div class="header-solution-section">
+          <h1>Your One-Stop Solution for Company Formation, Banking, and Compliance</h1>
+          <p>Empower your business with seamless company formation, innovative banking, and expert compliance
+            solutions—including streamlined ITIN processing, being an IRS Certified Acceptance Agent—so you can expand
+            globally with confidence.</p>
+        </div>
+        <div class="grid-container-solution">
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions1.png">
+            <h2>Instant Start</h2>
+            <p>Use your intuitive dashboard immediately.</p>
+          </div>
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions2.png">
+            <h2>Tax Identification</h2>
+            <p>Fast, simple and online application.</p>
+          </div>
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions3.png">
+            <h2>Business Banking</h2>
+            <p>East account setup with a debut card.</p>
+          </div>
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions4.jpg">
+            <h2>Bookkeeping</h2>
+            <p>Bookkeeping in check.</p>
+          </div>
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions5.png">
+            <h2>Accounting</h2>
+            <p>Integrate your accounting with tax.</p>
+          </div>
+          <div class="grid-item-solution">
+            <img class="img-solution-section" src="/img/solutions3.png">
+            <h2>Tax Filing</h2>
+            <p>Streamline taxes with automation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- business-section -->
+
+    <section class="business-section">
+      <div class="header">
+        <h1>Discover Our Complete Business Service Suite</h1>
+        <p>Sveto is your all-in-one partner for launching, managing, and compliance support. We make your journey to
+          success straightforward. LLC formation, comprehensive tax and compliance support—we make your journey to
+          success straightforward.</p>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>Bank Account Application</h2>
+          <p>Easily open a US business bank account in just a few days. Our hassle-free process ensures quick setup.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>EIN</h2>
+          <p>Obtain a unique 9-digit taxpayer identification number for tax purposes, invoices, and bank account setup.
+          </p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>ITIN</h2>
+          <p>Get an ITIN to open a bank account, file taxes, and use PayPal or Stripe with a CAA, certified by the IRS.
+          </p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>Federal Tax Filing</h2>
+          <p>File your personal and business taxes returns easily with our expert guidance and tools.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>State Tax Filing</h2>
+          <p>Easily file your annual reports and state taxes with our seamless process to ensure compliance.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>Post-Incorporation</h2>
+          <p>Transition your company’s governance structure seamlessly for a streamlined operation.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>Reseller Certificate</h2>
+          <p>Establish your brand on Amazon with our expert strategies and cutting-edge tools.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+        <div class="grid-item">
+          <h2>Certificate of Good Standing</h2>
+          <p>Establish your brand on Amazon with our expert strategies and cutting-edge tools.</p>
+          <button class="get-started-btn" onclick="openWhatsApp()">Enquire Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="section-header" id="about-us">
+        <h2>About Us</h2>
+        <p>Your trusted payment partner since 2020</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Why Choose PaymntGateway?</h3>
+          <p>
+            We provide a fast, secure, and hassle-free payment gateway setup
+            for all types of businesses. Whether you're a startup, an
+            enterprise, or running a fantasy platform, we ensure smooth
+            transactions with complete customer support.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>24/7 Customer Support</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>99.9% Uptime</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Bank-Grade Security</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Affordable Consultancy Fee at just ₹6,999 (Adjustable in
+                final costs).</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="about-image">
+          <div class="blob-background"></div>
+        </div> -->
+        <div class="about-image">
+          <div class="blob-background">
+            <!-- Multiple Money Icons Inside the Blob -->
+            <img src="./img/bitcoin.png" alt="Money Icon" class="money-icon icon1" />
+            <img src="./img/dollar.png" alt="Money Icon" class="money-icon icon2" />
+            <img src="./img/euro.png" alt="Money Icon" class="money-icon icon3" />
+            <img src="./img/rupee.png" alt="Money Icon" class="money-icon icon4" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="client-reviews">
+      <div class="section-header">
+        <h2>Client Reviews</h2>
+        <p>What our clients say about us</p>
+      </div>
+      <div class="reviews-slider">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-image"></div>
+            <div class="reviewer-info">
+              <h4>John Smith</h4>
+              <p>CEO, Tech Solutions</p>
+            </div>
+          </div>
+          <p class="review-text">
+            "PaymntGateway has transformed how we handle payments. Their system is
+            intuitive and reliable."
+          </p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-image"></div>
+            <div class="reviewer-info">
+              <h4>Sarah Johnson</h4>
+              <p>Founder, E-commerce Plus</p>
+            </div>
+          </div>
+          <p class="review-text">
+            "The best payment gateway we've used. Outstanding customer support
+            and features."
+          </p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <!-- <section class="newsletter">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to our newsletter for the latest updates and features</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit" class="get-started-btn">Subscribe</button>
+          </form>
+        </div>
+      </section> -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About PaymntGateway</h3>
+        <p style="margin-bottom: 10px;">Your trusted payment gateway solution for modern businesses.</p>
+       <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <p style="display: flex; align-items: center;">
+          <svg class="icon-footer" viewBox="0 0 384 512" style="margin-bottom: 0px;">
+            <path
+              d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+            </path>
+          </svg>
+          Payment Gateway
+        </p>
+        <p style="display: flex; align-items: center;">
+          <svg class="icon-footer" viewBox="0 0 512 512" style="margin-bottom: 0px;">
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+            </path>
+          </svg>
+          contact@paymntgateway.com
+        </p>
+        <p style="display: flex; align-items: center;">
+          <svg class="icon-footer" viewBox="0 0 512 512" style="margin-bottom: 0px;">
+            <path
+              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+            </path>
+          </svg>
+          +91 8178432760
+        </p>
+       </div>
+        <!-- <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div> -->
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+        </ul>
+      </div>
+      <!-- <div class="footer-section">
+        <h3>Newsletter</h3>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <p>Subscribe for updates and offers</p>
+      </div> -->
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 PaymntGateway. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Back to Top Button Functionality
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+
+    // Form Submit
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzbvT-kPQ8wg_qzYP-ejcK44OYUz8_puJff96QbNOLSxOFP5eAJruL44NOSclCofz8YmQ/exec";
+
+    document
+      .querySelector(".contact-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let loader = document.getElementById("loader");
+        let submitButton = document.querySelector(".submit-btn");
+
+        // Show loader & disable button
+        if (loader) loader.style.display = "block";
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+
+        let formData = {
+          name: document.getElementById("name").value,
+          phone: document.getElementById("phone").value,
+          email: document.getElementById("email").value,
+          whatsapp: document.getElementById("whatsapp").value,
+        };
+
+        fetch(scriptURL, {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: { "Content-Type": "application/json" },
+          mode: "no-cors",
+        })
+          .then(() => {
+            Swal.fire({
+              title: "Successfully Submitted!",
+              text: "We'll get back to you soon.",
+              icon: "success",
+            });
+            console.log("Second ....");
+
+            document.querySelector(".contact-form").reset();
+
+            // Hide loader & enable button
+            if (loader) loader.style.display = "none";
+            submitButton.disabled = false;
+            submitButton.textContent = "Submit";
+          })
+          .catch((error) => {
+            console.error("Error!", error);
+            Swal.fire({
+              title: "Submission Failed!",
+              text: "Please try again later.",
+              icon: "error",
+            });
+
+            if (loader) loader.style.display = "none";
+            submitButton.disabled = false;
+            submitButton.textContent = "Submit";
+          });
+      });
+  </script>
+
+  <script>
+    function openWhatsApp() {
+      window.open("https://wa.me/8178432760", "_blank");
+    }
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
